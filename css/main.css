@@ -153,8 +153,8 @@ margin-bottom: 10px;
 
 .game-details{
     background-color: #27282B;
-    inset: 0;
-    position: fixed;
+    min-height: 100vh;
+
 }
 .game-details-header {
   
