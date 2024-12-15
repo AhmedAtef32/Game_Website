@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+
+  <link rel="icon" href="imgs/images.png">
+  <!-- bootstrap link css  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- main link css  -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+<body>
+
+  <div class="loading d-none">
+    <span class="loader"></span>
+  </div>
+
+  <section class="Home" id="home">
+
+    <div class="bg-img-home">
+      <img src="imgs/wraper.png" alt="wraper">
+    </div>
+
+    <nav class="navbar navbar-expand-lg col-md-6 col-lg-9 mx-auto">
+      <div class="container ">
+        <div class="logo d-flex align-items-center gap-1">
+          <img src="imgs/logo-sm.png" alt="logo">
+          <h1 class="text-uppercase">game reviews</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mt-2mb-md-0  mb-2 ">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase active" aria-current="page" href="#">mmorpg</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">shooter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">sailing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">permadeath</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">superhero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">pixel</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="games-list mt-3">
+      <div class="container">
+        <div class="row g-4" id="games">
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="game-details d-none pt-3" id="game-details">
+    <div class="container">
+      <div class="game-details-header d-flex justify-content-between align-items-center mb-4">
+        <h2>Details Game</h2>
+        <i class="fa-solid fa-xmark" id="close-game-details"></i>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-deteails w-100" src=""  alt="thumbnail">
+        </div>
+        <div class="col-md-8 mt-3 mt-md-0">
+          <h3 class="game-title">Title: </h3>
+          <h4 class="game mb-3 mt-3 game-catagory">catagory: <span class="badge"></span> </h4>
+          <h4 class="game mb-3 game-platform">Platform: <span class="badge"></span> </h4>
+          <h4 class="game mb-3 game-Status">Status: <span class="badge"></span> </h4>
+          <p class="text-white game-description"></p>
+
+            <a  href="game-link" target="_blank" class="game-link btn btn-outline-warning text-white">Show More</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- bootstrap link js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- main link js -->
+  <script type="module" src="js/main.js"></script>
+  <!-- link sweet alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
