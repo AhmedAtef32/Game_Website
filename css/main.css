@@ -133,9 +133,11 @@ margin-bottom: 10px;
     transition: filter .5s ;
 }
 
+
 .card{
     cursor: pointer;
     transition: transform .5s;
+   aspect-ratio: 3/3.1;
 
     &:hover{  
         .card-img , .card-title span{
