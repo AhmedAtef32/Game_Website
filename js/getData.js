@@ -8,7 +8,8 @@ let gamedDescription = document.querySelector(".game-description");
 let imgDeteails = document.querySelector(".img-deteails");
 let gameLink = document.querySelector(".game-link")
 let loading = document.querySelector(".loading")
-
+export let search =document.getElementById("search")
+let dataToSearch;
 
 /**
  * this function to open or close loading
@@ -42,7 +43,7 @@ const response = await fetch("https://free-to-play-games-database.p.rapidapi.com
 
 if (response.ok) {
 const result = await response.json();
-console.log(result)
+dataToSearch = result;
 displayAllData(result)
 }
 spanerloading(1);
@@ -70,6 +71,7 @@ const response = await fetch(`https://free-to-play-games-database.p.rapidapi.com
 if (response.ok) {
 const result = await response.json();
 console.log(result)
+dataToSearch = result;
 displayAllData(result)
 }
 spanerloading(1);
@@ -111,7 +113,25 @@ spanerloading(1);
 }
 
 
+/**
+ * this function to search of the game 
+ */
+export function searchFun(){
 
+    let searchData = [];
+
+    for (let i = 0; i < dataToSearch.length; i++) {
+        
+        if (dataToSearch[i].title.toLowerCase().includes(search.value.toLowerCase())) {
+            searchData.push(dataToSearch[i])    
+        }else{
+
+        }
+        
+    }
+displayAllData(searchData)
+
+}
 
 
 

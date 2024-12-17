@@ -108,7 +108,11 @@ nav.navbar .nav-link{
 nav.navbar .nav-link:hover{
     color: var(--active-color);
 }
-
+.search-icon{
+    right: 5%;
+    transform:  translate(-50%, -50%);
+    cursor: pointer;
+}
 .card-title {
 margin-bottom: 10px;
     h5{

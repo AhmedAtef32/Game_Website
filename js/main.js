@@ -1,4 +1,4 @@
-import { getAllGames, getGameWithCategory } from "./getData.js";
+import { getAllGames, getGameWithCategory, search, searchFun } from "./getData.js";
 
 import { closeGameDetails, ClossDetails } from "./gamedetails.js";
 
@@ -27,6 +27,10 @@ for (let i = 0; i < navLinks.length; i++) {
     })
     
 }
+
+
+search.addEventListener("input", searchFun)
+
 
 
 
