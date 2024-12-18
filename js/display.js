@@ -23,7 +23,7 @@ export function displayAllData(list) {
                     <h5 class="mb-0">${list[i].title}</h5>
                     <span class="badge text-bg-primary p-2">Free</span>
                   </div>
-                <p class="card-text text-center">${list[i].short_description.slice(1,60)}</p>
+                <p class="card-text text-center">${list[i].short_description.slice(0,60)}</p>
               </div>
 
 
